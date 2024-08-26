@@ -30,6 +30,7 @@ This class manages the overall game logic and simulation aspects
   Handles ball-arc collisions. Iterates through each ball:
     - Checks if the ball goes out of bounds and removes it if needed
     - Creates a new ball with random properties at the starting position
+      (Normally it would be 1 out 2 in, but to make the code run as smoothly as possible, I limited the number of balls to 40)
     - Updates ball's velocity with gravity
     - Calculates distance between ball and arc center
     - If the ball is outside the arc but was previously inside (based on `inside` flag), a collision is detected
